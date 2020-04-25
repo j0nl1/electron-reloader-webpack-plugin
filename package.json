@@ -1,0 +1,42 @@
+{
+  "name": "electron-reloader-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin for reload electron",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest -c ./jest.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "webpack",
+    "electron",
+    "reload"
+  ],
+  "author": "Javier Aceña (j0nl1) <jonlitech@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j0nl1/electron-reloader-webpack-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j0nl1/electron-reloader-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/j0nl1/electron-reloader-webpack-plugin#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.2",
+    "@types/webpack": "^4.41.12",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
+  }
+}
