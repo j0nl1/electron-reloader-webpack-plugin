@@ -1,7 +1,7 @@
 import { spawn, ChildProcess } from "child_process";
 import { Compiler } from "webpack";
 
-export default class ElectronReloader {
+export = class ElectronReloader {
   command: string;
   args: string[];
   activeProcess?: ChildProcess;
@@ -19,4 +19,4 @@ export default class ElectronReloader {
       });
     });
   }
-}
+};

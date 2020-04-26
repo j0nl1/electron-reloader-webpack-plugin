@@ -1,6 +1,6 @@
 {
   "name": "electron-reloader-webpack-plugin",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "Webpack plugin for reload electron",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
