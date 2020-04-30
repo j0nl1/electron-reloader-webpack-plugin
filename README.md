@@ -1,7 +1,9 @@
 [npm_img]: https://img.shields.io/npm/v/electron-reloader-webpack-plugin.svg?style=flat-square
 [npm_site]: https://www.npmjs.org/package/electron-reloader-webpack-plugin
+[codecov_img]: https://img.shields.io/codecov/c/github/j0nl1/electron-reloader-webpack-plugin/master.svg?style=flat-square
+[codecov_url]: http://codecov.io/github/j0nl1/electron-reloader-webpack-plugin?branch=master
 
-[![npm info][npm_img]][npm_site]
+[![npm info][npm_img]][npm_site] [![codecov_info][codecov_img]][codecov_url]
 
 # Electron Reloader (Webpack Plugin) 👋
 
@@ -20,15 +22,15 @@ npm install -D electron-reloader-webpack-plugin
 > Add plugin to your webpack config
 
 ```javascript
-const ElectronReloader = require('electron-reloader-webpack-plugin');
+const ElectronReloaderPlugin = require('electron-reloader-webpack-plugin');
 
 module.exports = {
     plugins: [
         // ...
         // Call ElectronReloader here
-        new ElectronReloader('electron', ['.'])
+        new ElectronReloaderPlugin('electron', ['.'])
         // another example
-        new ElectronReloader('npm', ['run', 'electron:start'])
+        new ElectronReloaderPlugin('npm', ['run', 'electron:start'])
         // In first argument you define what command to use and the second argument what args want to use.
     ]
 };
